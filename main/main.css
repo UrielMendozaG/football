@@ -1,19 +1,58 @@
 /* estilos generales */
 
-*{
-    padding: 0;
-    margin: 0;
+@import url("https://fonts.googleapis.com/css?family=Livvic&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Livvic", sans-serif;
 }
 
 body {
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: auto;
+  grid-template-rows: auto auto auto auto auto;
   justify-items: center;
   align-items: center;
+
+  background: url(../resources/fondoMobile.svg) no-repeat;
+  background-position: -2em -8em;
+  
 }
 
+#section {
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
 
+#score {
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
 
+/* responsive background */
 
+@media only screen and (min-width: 610px) {
+  body {
+    background: url(../resources/fondoMobile.svg) no-repeat;
+    background-position: -10em -80em;
+    background-size: auto 400%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  body {
+    background: url(../resources/fondoDesktop.svg) no-repeat;
+    background-position: -30em -20em;
+    background-size: 170% auto;
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  body {
+    background: none;
+    background-position: -30em -20em;
+    background-size: 170% auto;
+  }
+}
