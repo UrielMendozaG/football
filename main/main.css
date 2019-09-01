@@ -1,0 +1,19 @@
+/* estilos generales */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+}
+
+
+
+
