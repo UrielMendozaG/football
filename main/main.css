@@ -21,6 +21,14 @@ body {
   
 }
 
+.hide {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
+
 #section {
   grid-row-start: 3;
   grid-row-end: 3;
@@ -31,6 +39,10 @@ body {
   grid-row-end: 2;
 }
 
+#doubleTapIcon {
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
 /* responsive background */
 
 @media only screen and (min-width: 610px) {

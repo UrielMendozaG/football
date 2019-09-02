@@ -1,10 +1,13 @@
 const bola = document.querySelector(".ball-run");
 const score = document.getElementById("score");
+const doubleTapIcon = document.getElementById("doubleTapIcon")
+
 var points = 0;
 
  function esperarTiempo() {
    setTimeout(function() {
      bola.classList.remove("ball-run");
+     doubleTapIcon.classList.add("showing");
 
      bola.addEventListener("click", function() {
        bola.classList.toggle("animation");
@@ -19,7 +22,6 @@ var points = 0;
       bola.style.cursor = "pointer";
     });
 
-    
    }, 1000);
  }
 
