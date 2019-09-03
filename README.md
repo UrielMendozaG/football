@@ -1,7 +1,7 @@
 # football
 Football mini game using bounce.js 
 
-##screenshots
+## screenshots
 ![](resources/ss.png)
 
 Este juego puede mejorar bastante.
